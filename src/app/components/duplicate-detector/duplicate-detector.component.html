@@ -1,0 +1,9 @@
+<div class="duplicate-container">
+    <h3>Duplicate Questions</h3>
+    <div *ngIf="duplicates.length === 0" class="alert alert-info">No duplicates found.</div>
+    <ul *ngFor="let duplicate of duplicates" class="list-group">
+        <li class="list-group-item">
+            <strong>Question:</strong> {{ duplicate.question_text }}
+        </li>
+    </ul>
+</div>
